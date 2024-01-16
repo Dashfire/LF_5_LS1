@@ -3,12 +3,16 @@
 #define DHTTYPE DHT22                    // DHT auswählen (WokWi = DHT22 / Hardware = DHT11)
 DHT dht(DHTPIN, DHTTYPE);                // Objekt mit Parameter anlegen
 
+#include <LiquidCrystal_I2C.h>           //LCD Library einbinden
+LiquidCrystal_I2C lcd(0x27,16,2);        //LCD Display einstellen
+
 float humidity, temperature;            // Variablen vereinbaren
 
 void setup() 
 {
   Serial.begin(9600);                    // serieller Monitor starten                 
   dht.begin();                           // DHT22-Sensor starten
+  lcd.begin(16, 2);                       //LCD Display starten
   pinMode(4,OUTPUT);
   pinMode(5,OUTPUT);
   pinMode(6,OUTPUT);
@@ -22,6 +26,7 @@ void loop()
   temperature = dht.readTemperature();   // Wert Temperatur
 
   setLED(temperature,checkPotentium());
+  setDisplay();                          //Refreshing the Display
   
   // Ausgabe im seriellen Monitor
   Serial.println("Humidity:    " + String(humidity) + "%");
@@ -41,6 +46,53 @@ void setLED (float tempTemperature, int tempMaxTemp) {
     digitalWrite(5, HIGH);
   }
 }
+
+
+/**
+Written by: HTab 16.01.2024
+Release: 1.1.0
+Version: 1.0.0
+
+Refreshs the LCD DIsplay
+Printing out the measured Data into the Display
+
+Input:
+
+Output:
+  void
+**/
+void setDisplay() {
+
+  lcd.clear();              //LCD Display clearen
+
+  lcd.setCursor(0,0);
+  lcd.print("Humidity:");    
+
+  //Kontrollmechanismus für das richtige Platzieren des Cursors
+  if(humidity >= 100) {
+    lcd.setCursor(9,0);
+  } else {
+    lcd.setCursor(10,0);
+  }
+
+  lcd.print(String(humidity) + "%");
+
+  lcd.setCursor(0,1);
+  lcd.print("Temp:");
+
+  //Kontrollmechanismus für das richtige Platzieren des Cursors
+  if(temperature <= -10) {
+    lcd.setCursor(9,1);
+  } else if(temperature >= 0 && temperature < 10) {
+    lcd.setCursor(11,1);
+  } else {
+    lcd.setCursor(10,1);
+  }
+
+  lcd.print(String(temperature) + "C");
+  
+}
+
 //TODO Change function to use the map function to remap Values to the Potentiometer
 int checkPotentium() {
   int maxTemp = analogRead(A0);
