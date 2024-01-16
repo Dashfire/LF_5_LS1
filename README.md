@@ -20,4 +20,4 @@ LED Funktionen mit blinken
 
 ### Erklärung
 
-Im Verzeichnis [Arduino]() könnt ihr eine Variante mit Einbau der Bibiothek für
+Im Verzeichnis [Arduino](/Arduino) könnt ihr eine Variante mit Einbau der Bibliotheken sehen und im Verziechnis [WokWI](/WokWI) eine Variante ohne Bibliotheken
