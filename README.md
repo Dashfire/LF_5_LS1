@@ -1,3 +1,17 @@
 # LF_5_LS1
-This project is for the first apprenticeship year in the subject LF 05 - Softwaredevelopment.
-## 
+Dieses Projekt ist im Rahmen des ersten Ausbildungsjahres als Fachinformatiker für Anwendungsentwicklung entstanden.
+
+Dieses Projekt ist von:
+- [Hamidreza Tabrizi]()
+- [Marc Czapp]()
+
+## Aufgabenstellung
+
+## Aufteilung
+
+Struktogramm
+LCD Funktionen
+
+LED Funktionen mit blinken
+
+## Erklärung
