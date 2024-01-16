@@ -173,13 +173,3 @@ void setLED (float tempTemperature, int tempMaxTemp) {
 
   blink(5,500,500);
 }
-//TODO 
-int checkPotentium() {
-  int maxTemp = analogRead(A0);
-  maxTemp /= 10;
-  Serial.println("Max Temp:" + String(maxTemp));
-  return maxTemp;
-
-}
-
-
