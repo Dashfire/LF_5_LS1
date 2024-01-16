@@ -41,7 +41,7 @@ void setLED (float tempTemperature, int tempMaxTemp) {
     digitalWrite(5, HIGH);
   }
 }
-//TODO 
+//TODO Change function to use the map function to remap Values to the Potentiometer
 int checkPotentium() {
   int maxTemp = analogRead(A0);
   maxTemp /= 10;
@@ -50,7 +50,7 @@ int checkPotentium() {
 
 }
 
-void blinken (int pin, int rate) {
+void blink (int pin, int rate) {
     digitalWrite(pin, HIGH);
     delay(rate);
     digitalWrite(pin, LOW);
