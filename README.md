@@ -5,13 +5,19 @@ Dieses Projekt ist von:
 - [Hamidreza Tabrizi]()
 - [Marc Czapp]()
 
-## Aufgabenstellung
+## Englisch
 
-## Aufteilung
+## Deutsch
+
+### Aufgabenstellung
+
+### Aufteilung
 
 Struktogramm
 LCD Funktionen
 
 LED Funktionen mit blinken
 
-## Erklärung
+### Erklärung
+
+Im Verzeichnis [Arduino]() könnt ihr eine Variante mit Einbau der Bibiothek für
