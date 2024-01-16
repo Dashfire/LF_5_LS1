@@ -62,7 +62,7 @@ void loop()
   temperature = dht.readTemperature();   // Wert Temperatur
 
   setLED(temperature,checkPotentium());
-  setDisplay();                          //Refreshing the Display
+  setDisplay(humidity, temperature);      //Refreshing the Display
   
   // Ausgabe im seriellen Monitor
   Serial.println("Humidity:    " + String(humidity) + "%");
@@ -84,7 +84,7 @@ Input:
 Output:
   void
 **/
-void setDisplay() {
+void setDisplay(float humid, float temp) {
 
   lcd.clear();              //LCD Display clearen
 
@@ -92,27 +92,27 @@ void setDisplay() {
   lcd.print("Humidity:");    
 
   //Kontrollmechanismus für das richtige Platzieren des Cursors
-  if(humidity >= 100) {
+  if(humid >= 100) {
     lcd.setCursor(9,0);
   } else {
     lcd.setCursor(10,0);
   }
 
-  lcd.print(String(humidity) + "%");
+  lcd.print(String(humid) + "%");
 
   lcd.setCursor(0,1);
   lcd.print("Temp:");
 
   //Kontrollmechanismus für das richtige Platzieren des Cursors
-  if(temperature <= -10) {
+  if(temp <= -10) {
     lcd.setCursor(9,1);
-  } else if(temperature >= 0 && temperature < 10) {
+  } else if(temp >= 0 && temp < 10) {
     lcd.setCursor(11,1);
   } else {
     lcd.setCursor(10,1);
   }
 
-  lcd.print(String(temperature) + "C");
+  lcd.print(String(temp) + "C");
   
 }
 
