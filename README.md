@@ -7,7 +7,10 @@ Dieses Projekt ist von:
 
 ### Funktionsbeschreibung
 
+
+
+### Struktogramm Haupt-Funktion
+
 ![Main Struktogramm](https://github.com/Dashfire/LF_5_LS1/assets/1838613/05b64460-7535-4b26-92fe-e631e98d67bb)
 
-### Struktogramm
-
+### Struktogramm Display-Funktion
