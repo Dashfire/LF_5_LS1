@@ -50,7 +50,8 @@ Written by: MCzapp 05.02.2024
 Release: 2.0.0
 Version: 1.0.0
 
-loop function that implements the functions.
+Loop Funktion mit Kontrollmechnismen für das Zeitintervall
+Aufruf der weiteren Methoden, die definiert nworden sind
 
 Output:
   void
@@ -86,12 +87,12 @@ Written by: HTab 16.01.2024
 Release: 1.1.0
 Version: 1.0.0
 
-Refreshs the LCD DIsplay
-Printing out the measured Data into the Display
+Aktualisiert das LCD Display
+Printet die gemesste Temperatur und Luftfeuchtigkeit im seriellen Monitor
 
 Input:
-  float humid = Current Humidity
-  float temp = Current Temperature
+  float humid = Gemessene Luftfeuchtigkeit
+  float temp = Gemessene Temperatur
 
 Output:
   void
@@ -128,6 +129,20 @@ void setDisplay(float humid, float temp) {
   
 }
 
+/**
+Written by MCzapp 05.12.2023
+Release: 1.0.0
+Version: 2.0.0
+
+Reichweite vom Potentiometer definieren
+Ausgabe von der Max Temperatur im seriellen Monitor
+
+Input:
+
+Output:
+  int maxTemp
+
+**/
 int checkPotentium() {
   int maxTemp = analogRead(A0);
   maxTemp = map(maxTemp, 0, 1023, 25, 255);
@@ -142,8 +157,8 @@ Release: 1.0.0
 Version: 2.0.0
 
 Input:
-  float tempTemperature = Current Temperature
-  int tempMaxTemp = Max Temperatur setted by Potentiumeter
+  float tempTemperature = Jetzige Temperature
+  int tempMaxTemp = eingestellte Max Temperatur vom Potentiumeter
 
 Output:
   void
@@ -166,7 +181,7 @@ Written by: HTab 16.01.2024
 Release: 1.0.0
 Version: 1.0.0
 
-Resets all LED Pins to LOW
+Setzt alle LED Pins auf LOW
 
 Input:
 
