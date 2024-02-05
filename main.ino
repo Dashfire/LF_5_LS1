@@ -126,10 +126,9 @@ void setDisplay(float humid, float temp) {
   
 }
 
-//TODO Change function to use the map function to remap Values to the Potentiometer
 int checkPotentium() {
   int maxTemp = analogRead(A0);
-  maxTemp = map(maxTemp, 0, 1023, 24, 255);
+  maxTemp = map(maxTemp, 0, 1023, 25, 255);
   Serial.println("Max Temp:" + String(maxTemp));
   return maxTemp;
 
