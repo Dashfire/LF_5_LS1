@@ -1,3 +1,19 @@
+/**
+Written by: HTab 16.01.2024
+Release: 1.0.0
+Version: 1.0.0
+
+Refreshs the LCD DIsplay
+Printing out the measured Data into the Display
+
+Input:
+  float humid = Current Humidity
+  float temp = Current Temperature
+
+Output:
+  void
+**/
+
 void setDisplay(float humid, float temp) {
 
   lcd.clear();                //LCD Display clearen         
