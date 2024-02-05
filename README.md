@@ -5,18 +5,9 @@ Dieses Projekt ist von:
 - [Hamidreza Tabrizi]()
 - [Marc Czapp]()
 
-## Englisch
+### Funktionsbeschreibung
 
-## Deutsch
 
-### Aufgabenstellung
-
-### Aufteilung
-
-Struktogramm
-LCD Funktionen
-
-LED Funktionen mit blinken
 
 ### Erklärung
 
