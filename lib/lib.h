@@ -3,6 +3,6 @@
 
 #include "Arduino.h"
 
-void setDisplay(int pin, int intervall, int repeat);
+void setDisplay(float humid, float temp);
 
 #endif
