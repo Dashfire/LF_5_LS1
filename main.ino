@@ -38,11 +38,11 @@ void setup()
   Serial.begin(9600);                    // serieller Monitor starten                 
   dht.begin();                           // DHT22-Sensor starten
   lcd.begin(16, 2);                       //LCD Display starten
-  pinMode(4,OUTPUT);
-  pinMode(5,OUTPUT);
-  pinMode(6,OUTPUT);
-  pinMode(7,OUTPUT);
-  pinMode(A0, INPUT);
+  pinMode(4,OUTPUT);                      //PIN-Modes setzen
+  pinMode(5,OUTPUT);                      //PIN-Modes setzen
+  pinMode(6,OUTPUT);                      //PIN-Modes setzen
+  pinMode(7,OUTPUT);                      //PIN-Modes setzen
+  pinMode(A0, INPUT);                      //PIN-Modes setzen
 }
 
 /**
@@ -58,16 +58,18 @@ Output:
 
 void loop() 
 {
-  
+
+  // Kontrollmechanismus wenn Intervall über 500ms ist
   if(millis() - privousMilli > 500) {
     humidity = dht.readHumidity();         // Wert Luftfeuchtigkeit 
     temperature = dht.readTemperature();   // Wert Temperatur
     setLED(temperature, checkPotentium());
   }
-  
+
+  // Kontrollmechanismus wenn Intervall über 5000ms ist
   if(millis() - privousMilli > 5000) {
-    privousMilli = millis();
-    resetLED();
+    privousMilli = millis();               // Vorherige Zeitmesung auf die jetzige Zeit setzen
+    resetLED();                            // Reset-Methode aufrufen
   }
   
   setDisplay(humidity, temperature);        //Refreshing the Display
