@@ -2,8 +2,8 @@
 Dieses Projekt ist im Rahmen des ersten Ausbildungsjahres als Fachinformatiker für Anwendungsentwicklung entstanden.
 
 Dieses Projekt ist von:
-- [Hamidreza Tabrizi]()
-- [Marc Czapp]()
+- [Hamidreza Tabrizi](https://github.com/Hamid2030)
+- [Marc Czapp](https://github.com/Dashfire)
 
 ## Beschreibung
 
