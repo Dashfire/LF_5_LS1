@@ -1,2 +1,0 @@
-blinkLib KEYWORD1
-blink KEYWORD
