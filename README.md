@@ -16,12 +16,12 @@ mit einem LCD1602 darzustellen.
 Für die Nutzung des Programms, einfach den Code der main.ino auf deinen Arduino Uno kopieren. Sobald der Arduino angeschlossen ist,
 misst er die Temperatur und Luftfeuchtigkeit. Die Grenzen der Temperaturmessung liegen bei 20°C als feste untere Grenze.
 Die Obere Grenze kann von 25°C bis 255°C mit dem Drehregler eingestellt werden. Eine Benachrichtigung über den Akutellen 
-Messwert, kann im Serielen Monitor, den LEDS oder dem mit angeschlossenen LCD1602 eingesehen werden. 
+Messwert, kann im Serielen Monitor, den LEDs oder dem mit angeschlossenen LCD1602 eingesehen werden. 
 
 Die LEDS haben folgende Bedeutung:
-Blaue LED - Die Temperatur liegt unter normalen Bereich.
-Grüne LED - Die Temperatur liegt im normalen Bereich.
-Rote LED - Die Temperatur liegt ueber dem normalen Bereich.
++ Blaue LED - Die Temperatur liegt unter normalen Bereich.
++ Grüne LED - Die Temperatur liegt im normalen Bereich.
++ Rote LED - Die Temperatur liegt ueber dem normalen Bereich.
 
 ## Struktogramm Haupt-Funktion
 
