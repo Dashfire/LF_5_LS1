@@ -1,5 +1,6 @@
 #include "Arduino.h"
 #include "lib.h
+
 void setDisplay(float humid, float temp) {
 
   lcd.clear();                //LCD Display clearen         
