@@ -13,6 +13,7 @@ Die Datei main.ino behinhaltet jegliche Funktionalität um auf einen Arduino Uno
 mit einem LCD1602 darzustellen.
 
 ## Nutzung
+
 Für die Nutzung des Programms, einfach den Code der main.ino auf deinen Arduino Uno kopieren. Sobald der Arduino angeschlossen ist,
 misst er die Temperatur und Luftfeuchtigkeit. Die Grenzen der Temperaturmessung liegen bei 20°C als feste untere Grenze.
 Die Obere Grenze kann von 25°C bis 255°C mit dem Drehregler eingestellt werden. Eine Benachrichtigung über den Akutellen 
@@ -30,3 +31,20 @@ Die LEDS haben folgende Bedeutung:
 ## Struktogramm Display-Funktion
 
 ![setDisplay Struktogramm](https://github.com/Dashfire/LF_5_LS1/assets/1838613/3e185313-61a1-43dd-855b-c79fb16a4fa0)
+
+
+## Erweiterbarkeit
+
+- Einbindung der Gelben LED als Indikator beim Eintritt des nächsten Intervalls
+- Dokumentierungsoption der gemessten Werte z.B. Speichern in einer CSV Datei
+- Anzeige der eingestellten Max Temperatur im 4-Digit-Display
+- Umschaltoption durch ein Knopf auf Humidity Einstellungen:
+     - LEDs Zeigen den Status der momentanen Humidity an
+    - Max-Humidity ist einstellbar durch Potentiometer
+
+
+## Informationsquellen
+
+- Die Infomaterialien in Teams
+- Wokwi Dokumentation
+- Arduino Dokumentation
