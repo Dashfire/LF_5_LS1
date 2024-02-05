@@ -1,5 +1,5 @@
-#ifndef lib_h
-#define lib_h
+#ifndef Display_h
+#define Display_h
 
 #include "Arduino.h"
 
