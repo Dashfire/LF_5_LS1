@@ -45,6 +45,17 @@ void setup()
   pinMode(A0, INPUT);
 }
 
+/**
+Written by: MCzapp 05.02.2024
+Release: 2.0.0
+Version: 1.0.0
+
+loop function that implements the functions.
+
+Output:
+  void
+**/
+
 void loop() 
 {
   
