@@ -7,8 +7,5 @@ Dieses Projekt ist von:
 
 ### Funktionsbeschreibung
 
+### Struktogramm
 
-
-### Erklärung
-
-Im Verzeichnis [Arduino](/Arduino) könnt ihr eine Variante mit Einbau der Bibliotheken sehen und im Verziechnis [WokWi](/WokWi) eine Variante ohne Bibliotheken
