@@ -3,7 +3,7 @@ Dieses Projekt ist im Rahmen des ersten Ausbildungsjahres als Fachinformatiker f
 
 Dieses Projekt ist von:
 - [Hamidreza Tabrizi](https://github.com/Hamid2030)
-- [Marc Czapp](https://github.com/Dashfire)
+- [Christina Czapp](https://github.com/Dashfire)
 
 ## Beschreibung
 
